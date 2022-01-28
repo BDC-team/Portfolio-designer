@@ -303,13 +303,12 @@ body,html{
             }
             .container{
                 &__nav{
-                    
-                    
                     .container__img{
                         display: flex;
                         align-items: center;
                         margin: 0 auto;
                         max-width: 1896px;
+                        padding-bottom: 64px;
                         img{
                             padding-right: 34px;
                         }
@@ -326,24 +325,44 @@ body,html{
                 &__images.works{
                     display: flex;
                     flex-direction: row;
+                    justify-content: center;
+
                     @media screen and (max-width:1100px) {
                         flex-direction: column;
+                        justify-content: center;
+
                     }
-                    .container__row1{
-                        .item1{
-                            background-image: url('../images/assets/works/work1.png');
-                            background-position: center center;
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            min-height: 100vh;
-                            padding: 15px;
-                            width: 612px;
-                            max-width: 612px;
+                    .container__row1{   
+                        padding: 0 25px;
+                        .item{
                             display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                            text-align: center;
+                            @media screen and (max-width:1100px) {
+                                justify-content: center;
+                            }
+                            width: 100%;
+                            img{
+                                max-width: 888px;
+                            }
+                            padding-bottom: 24px;
+
+                        }
+                    }
+                    .container__row2{
+                        padding: 0 25px;
+                        @media screen and (max-width:1100px) {
+                            padding-top: 55px;
+                        }
+                        padding-top: 218px;
+                        .item{
+                            display: flex;
+                            @media screen and (max-width:1100px) {
+                                justify-content: center;
+                            }
+                            width: 100%;
+                            img{
+                                max-width: 888px;
+                            }
+                            padding-bottom: 24px;
 
                         }
                     }
